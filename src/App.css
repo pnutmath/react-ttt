@@ -3,14 +3,14 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  animation: App-logo-spin infinite 1s linear;
+  height: 10vmin;
   pointer-events: none;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,4 +30,90 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  cursor: pointer;
+}
+
+.square:focus {
+  outline: none;
+  background-color: bisque;
+}
+.square:hover {
+  outline: none;
+  background-color: gainsboro;
+}
+
+.square-wining{
+  background-color: green !important;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+.game-info ol li{
+  list-style: none;
+}
+.game-info ol li button{
+  height: 25px;
+  margin: 2px;
+  border: 1px solid #52a6e7;
+  background-color: white;
+  cursor: pointer;
+}
+
+.sorting-button{
+  height: 25px;
+  margin: 2px;
+  border: 1px solid lightcoral;
+  background-color: white;
+  cursor: pointer;
+}
+
+.move-selected{
+  font-weight: bold;
 }
